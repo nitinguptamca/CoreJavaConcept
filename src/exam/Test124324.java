@@ -1,8 +1,5 @@
 package exam;
 
-import java.util.Map;
-import java.util.TreeMap;
-
 public class Test124324 {
 	public static void printValue(int i, int j, int k) {
 		System.out.println("int");

@@ -1,13 +1,10 @@
 package febonisis;
 
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.stream.IntStream;
-
-import org.omg.CORBA.portable.Streamable;
 
 public class FibonacciExample2 {
 	static int n1 = 0, n2 = 1, n3 = 0;

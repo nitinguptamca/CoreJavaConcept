@@ -1,7 +1,5 @@
 package com.exception.handling;
 
-import javax.management.RuntimeErrorException;
-
 public class ExceptionHandling {
 
 	public static String parse(String str) {

@@ -1,5 +1,7 @@
 package com.thread;
 
+import static java.util.stream.Collectors.toList;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -10,7 +12,6 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-import static java.util.stream.Collectors.toList;
 
 public class Anagrams {
 	private static Map<String, List<String>> anagramsMap = new HashMap<>(100);

@@ -1,8 +1,5 @@
 package exam;
 
-import java.io.File;
-import java.io.IOException;
-
 class SuperClass {
 	public int doIt(String str, Integer... data) throws Exception {
 		String signature = "(String, Integer[])";

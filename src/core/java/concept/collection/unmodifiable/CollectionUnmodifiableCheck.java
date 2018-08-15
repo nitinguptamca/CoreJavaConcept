@@ -1,11 +1,12 @@
 package core.java.concept.collection.unmodifiable;
 
+import static java.util.Arrays.asList;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
-import static java.util.Arrays.asList;
 
 public class CollectionUnmodifiableCheck {
 

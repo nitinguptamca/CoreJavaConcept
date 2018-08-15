@@ -1,7 +1,5 @@
 package core.java.concept.swap;
 
-import java.util.LinkedList;
-
 public class SwapeNumber {
 
 	public void swap(Integer x, Integer y) {
