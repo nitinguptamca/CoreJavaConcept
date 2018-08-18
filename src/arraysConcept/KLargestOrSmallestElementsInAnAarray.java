@@ -5,7 +5,6 @@ import java.util.Collections;
 
 public class KLargestOrSmallestElementsInAnAarray {
 
-	
 	// Standard partition process of QuickSort.
 	// It considers the last element as pivot
 	// and moves all smaller element to left of
@@ -73,13 +72,13 @@ public class KLargestOrSmallestElementsInAnAarray {
 			System.out.print(arr[i] + " ");
 	}
 
+	/// **********************Best and easy********************************////
 	public static void KLargestDemo(Integer[] array, int k) {
 
 		if (k < 0 || k > array.length) {
 			return;
 		}
 		int[] temp = new int[k];
-
 
 		for (int i = k; i < array.length; i++) {
 			int min = Integer.MAX_VALUE;
@@ -98,37 +97,38 @@ public class KLargestOrSmallestElementsInAnAarray {
 			System.out.print(i + " ");
 		}
 	}
-	
-	public static void kLargest2(Integer[] array, int k){
 
-	    int minIndex = 0, i;                            //Find Min
+	public static void kLargest2(Integer[] array, int k) {
 
-	    for (i = k; i < array.length; i++){
-	        minIndex = 0;
-	        for (int j = 0; j < k; j++){
-	            if(array[j] < array[minIndex]){
-	                minIndex = j;
-	                array[minIndex] = array[j];
-	            }
-	        }       
-	        if (array[minIndex] < array[i]){         //Swap item if min < array[i]
+		int minIndex = 0, i; // Find Min
 
-	            int temp = array[minIndex];
-	            array[minIndex] = array[i];
-	            array[i] = temp;
-	        }
-	    }
-	    for (int q = 0; q < k; q++){                            //Print output
-	        System.out.print(array[q] + " ");
-	    }
-	} 
+		for (i = k; i < array.length; i++) {
+			minIndex = 0;
+			for (int j = 0; j < k; j++) {
+				if (array[j] < array[minIndex]) {
+					minIndex = j;
+					array[minIndex] = array[j];
+				}
+			}
+			if (array[minIndex] < array[i]) { // Swap item if min < array[i]
+
+				int temp = array[minIndex];
+				array[minIndex] = array[i];
+				array[i] = temp;
+			}
+		}
+		for (int q = 0; q < k; q++) { // Print output
+			System.out.print(array[q] + " ");
+		}
+	}
 
 	public static void main(String[] args) {
 		Integer arr[] = new Integer[] { 1, 23, 12, 9, 30, 2, 50 };
 		int k = 5;
-		//KLargestDemo(arr, k);
+		// KLargestDemo(arr, k);
 		kLargest2(arr, k);
-		///System.out.print("K'th smallest element is " + kthSmallest(arr, 0, arr.length - 1, k));
+		/// System.out.print("K'th smallest element is " + kthSmallest(arr, 0,
+		/// arr.length - 1, k));
 	}
 
 }
