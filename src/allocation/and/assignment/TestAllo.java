@@ -30,6 +30,9 @@ class Box1
 	{
 		return width * height * depth;
 	}
+	public void setHeight(double height) {
+		this.height = height;
+	}
 }
 
 //driver class
@@ -39,12 +42,12 @@ public class TestAllo
 	{
 		// creating a box with all dimensions specified
 		Box1 mybox = new Box1(10, 20, 15);
-
+		mybox.setHeight(100);
 		// creating a copy of mybox
 		Box1 myclone = new Box1(mybox);
 
 		double vol;
-
+		mybox.setHeight(200);
 		// get volume of mybox
 		vol = mybox.volume();
 		System.out.println("Volume of mybox is " + vol);
